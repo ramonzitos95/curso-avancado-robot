@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20210117 16:22:20.500" rpa="false">
+<suite id="s1" name="String" source="E:\Linguagens\Robot Framework\Libraries auxiliares\String\string.robot">
+<test id="s1-t1" name="Exemplo 01: Lidando com linhas de um texto String">
+<kw name="Contando as linhas">
+<kw name="Pega arquivo">
+<assign>
+<var>${STRING}</var>
+</assign>
+<kw name="Get File" library="OperatingSystem">
+<doc>Returns the contents of a specified file.</doc>
+<arguments>
+<arg>./my_files/arquivo_texto_linhas.txt</arg>
+</arguments>
+<assign>
+<var>${CONTEUDO_ARQUIVO}</var>
+</assign>
+<msg timestamp="20210117 16:22:20.565" level="INFO" html="yes">Getting file '&lt;a href="file://E:\Linguagens\Robot Framework\Libraries auxiliares\my_files\arquivo_texto_linhas.txt"&gt;E:\Linguagens\Robot Framework\Libraries auxiliares\my_files\arquivo_texto_linhas.txt&lt;/a&gt;'.</msg>
+<msg timestamp="20210117 16:22:20.565" level="FAIL">FileNotFoundError: [Errno 2] No such file or directory: 'E:\\Linguagens\\Robot Framework\\Libraries auxiliares\\my_files\\arquivo_texto_linhas.txt'</msg>
+<status status="FAIL" starttime="20210117 16:22:20.565" endtime="20210117 16:22:20.566"></status>
+</kw>
+<status status="FAIL" starttime="20210117 16:22:20.564" endtime="20210117 16:22:20.566"></status>
+</kw>
+<status status="FAIL" starttime="20210117 16:22:20.564" endtime="20210117 16:22:20.566"></status>
+</kw>
+<status status="FAIL" starttime="20210117 16:22:20.563" endtime="20210117 16:22:20.566" critical="yes">FileNotFoundError: [Errno 2] No such file or directory: 'E:\\Linguagens\\Robot Framework\\Libraries auxiliares\\my_files\\arquivo_texto_linhas.txt'</status>
+</test>
+<test id="s1-t2" name="Exemplo 02: Manipulando a String">
+<kw name="Substituindo valores no texto">
+<kw name="Pega arquivo">
+<assign>
+<var>${TEXTO}</var>
+</assign>
+<kw name="Get File" library="OperatingSystem">
+<doc>Returns the contents of a specified file.</doc>
+<arguments>
+<arg>./my_files/arquivo_texto_linhas.txt</arg>
+</arguments>
+<assign>
+<var>${CONTEUDO_ARQUIVO}</var>
+</assign>
+<msg timestamp="20210117 16:22:20.591" level="INFO" html="yes">Getting file '&lt;a href="file://E:\Linguagens\Robot Framework\Libraries auxiliares\my_files\arquivo_texto_linhas.txt"&gt;E:\Linguagens\Robot Framework\Libraries auxiliares\my_files\arquivo_texto_linhas.txt&lt;/a&gt;'.</msg>
+<msg timestamp="20210117 16:22:20.591" level="FAIL">FileNotFoundError: [Errno 2] No such file or directory: 'E:\\Linguagens\\Robot Framework\\Libraries auxiliares\\my_files\\arquivo_texto_linhas.txt'</msg>
+<status status="FAIL" starttime="20210117 16:22:20.590" endtime="20210117 16:22:20.591"></status>
+</kw>
+<status status="FAIL" starttime="20210117 16:22:20.589" endtime="20210117 16:22:20.591"></status>
+</kw>
+<status status="FAIL" starttime="20210117 16:22:20.589" endtime="20210117 16:22:20.592"></status>
+</kw>
+<status status="FAIL" starttime="20210117 16:22:20.588" endtime="20210117 16:22:20.592" critical="yes">FileNotFoundError: [Errno 2] No such file or directory: 'E:\\Linguagens\\Robot Framework\\Libraries auxiliares\\my_files\\arquivo_texto_linhas.txt'</status>
+</test>
+<doc>http://robotframework.org/robotframework/latest/libraries/String.html</doc>
+<status status="FAIL" starttime="20210117 16:22:20.502" endtime="20210117 16:22:20.614"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2">Critical Tests</stat>
+<stat pass="0" fail="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" id="s1" name="String">String</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
