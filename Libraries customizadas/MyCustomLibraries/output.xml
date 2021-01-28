@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20210122 00:02:07.778" rpa="false">
+<suite id="s1" name="ExemploComPython" source="E:\Linguagens\Robot Framework\curso-avancado-robot\Libraries customizadas\MyCustomLibraries\ExemploComPython.robot">
+<test id="s1-t1" name="Somar dois numeros">
+<kw name="Soma" library="operacao-aritmetica">
+<arguments>
+<arg>1</arg>
+<arg>2</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20210122 00:02:07.821" level="INFO">${result} = 12</msg>
+<status status="PASS" starttime="20210122 00:02:07.820" endtime="20210122 00:02:07.821"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${result}</arg>
+</arguments>
+<msg timestamp="20210122 00:02:07.822" level="INFO">12</msg>
+<status status="PASS" starttime="20210122 00:02:07.822" endtime="20210122 00:02:07.822"></status>
+</kw>
+<status status="PASS" starttime="20210122 00:02:07.820" endtime="20210122 00:02:07.823" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Subtrair dois numeros">
+<kw name="Subtracao" library="operacao-aritmetica">
+<arguments>
+<arg>20</arg>
+<arg>10</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20210122 00:02:07.849" level="FAIL">TypeError: unsupported operand type(s) for -: 'str' and 'str'</msg>
+<status status="FAIL" starttime="20210122 00:02:07.848" endtime="20210122 00:02:07.850"></status>
+</kw>
+<status status="FAIL" starttime="20210122 00:02:07.848" endtime="20210122 00:02:07.850" critical="yes">TypeError: unsupported operand type(s) for -: 'str' and 'str'</status>
+</test>
+<test id="s1-t3" name="Dividir dois numeros">
+<kw name="Divisao" library="operacao-aritmetica">
+<arguments>
+<arg>50</arg>
+<arg>5</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20210122 00:02:07.875" level="FAIL">TypeError: unsupported operand type(s) for /: 'str' and 'str'</msg>
+<status status="FAIL" starttime="20210122 00:02:07.874" endtime="20210122 00:02:07.875"></status>
+</kw>
+<status status="FAIL" starttime="20210122 00:02:07.873" endtime="20210122 00:02:07.875" critical="yes">TypeError: unsupported operand type(s) for /: 'str' and 'str'</status>
+</test>
+<test id="s1-t4" name="Multiplicar dois numeros">
+<kw name="Multiplicar" library="operacao-aritmetica">
+<arguments>
+<arg>500</arg>
+<arg>5</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20210122 00:02:07.957" level="FAIL">TypeError: can't multiply sequence by non-int of type 'str'</msg>
+<status status="FAIL" starttime="20210122 00:02:07.956" endtime="20210122 00:02:07.957"></status>
+</kw>
+<status status="FAIL" starttime="20210122 00:02:07.955" endtime="20210122 00:02:07.957" critical="yes">TypeError: can't multiply sequence by non-int of type 'str'</status>
+</test>
+<status status="FAIL" starttime="20210122 00:02:07.781" endtime="20210122 00:02:07.959"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="3">Critical Tests</stat>
+<stat pass="1" fail="3">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="3" id="s1" name="ExemploComPython">ExemploComPython</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
